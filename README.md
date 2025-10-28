@@ -36,14 +36,14 @@ Your form link will look like this:
 
 ```
 
-https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/viewform
+https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/viewform
 
 ```
 
 Here, your **Form ID** is:
 ```
 
-1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2
+1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg
 
 ```
 
@@ -55,7 +55,7 @@ Once you have the Form ID, your **submission URL** should be:
 
 ```
 
-https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse
+https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/formResponse
 
 ````
 
