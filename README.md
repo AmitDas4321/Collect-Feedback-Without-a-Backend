@@ -115,6 +115,27 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
 
 ---
 
+## 🔎 Getting Your Google Form **entry IDs**
+
+Finding your form’s internal field IDs (like `entry.1727297528`) is now effortless with our Chrome extension 👇
+
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/google-form-entry-id-finder/REPLACE_WITH_YOUR_ID" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/➡️%20Get%20the%20Extension%20on%20Chrome%20Web%20Store-blue?style=for-the-badge&logo=googlechrome" alt="Get the Extension on Chrome Web Store">
+  </a>
+</p>
+
+**How It Works**
+
+* Open any Google Form.
+* Click the **Google Form Entry ID Finder** extension icon.
+* Instantly see all form fields with their corresponding **entry IDs**.
+* Click **Copy** next to any ID to use it in your HTML form.
+
+> 🧩 This extension makes connecting your custom website forms to Google Forms simple — no backend, no guesswork, 100% client-side.
+
+---
+
 ## ✅ Example Output
 
 * When a user submits the form, the data is instantly stored in your Google Form’s **Responses → Spreadsheet** tab.
