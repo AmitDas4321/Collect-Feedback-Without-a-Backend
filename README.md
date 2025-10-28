@@ -25,14 +25,14 @@ Your form link will look like this:
 
 ```
 
-https://docs.google.com/forms/d/e/1FAIpQLSddzO18B1k_fIvmCNol4llBCl2QaCGsh1Zc85JROJxymasofA/viewform
+https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/viewform
 
 ```
 
 Here, your **Form ID** is:
 ```
 
-1FAIpQLSddzO18B1k_fIvmCNol4llBCl2QaCGsh1Zc85JROJxymasofA
+1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2
 
 ```
 
@@ -44,7 +44,7 @@ Once you have the Form ID, your **submission URL** should be:
 
 ```
 
-https://docs.google.com/forms/d/e/1FAIpQLSddzO18B1k_fIvmCNol4llBCl2QaCGsh1Zc85JROJxymasofA/formResponse
+https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse
 
 ````
 
@@ -70,7 +70,7 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
   <h2>We value your feedback 💬</h2>
 
   <form id="feedback-form"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSddzO18B1k_fIvmCNol4llBCl2QaCGsh1Zc85JROJxymasofA/formResponse"
+        action="https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse"
         method="POST"
         target="hidden_iframe"
         enctype="text/plain">
