@@ -128,13 +128,29 @@ Released under the **MIT License** — free to use and modify.
 
 ---
 
+Here’s how you can extend that author section nicely, including an “About Me” paragraph and your **Buy Me a Coffee** link in a clean GitHub-ready Markdown format:
+
+---
+
 ## 👨‍💻 Author
 
 | [<img src="https://avatars.githubusercontent.com/u/112541611?v=4" width="60" alt="Amit Das"/>](https://amitdas.site) |
 | :------------------------------------------------------------------------------------------------------------------: |
 |                                           [Amit Das](https://amitdas.site)                                           |
 
----
+### 🧠 About Me
+
+Hi there! I'm **Amit Das**, a passionate **developer, designer, and tech innovator** from India 🇮🇳.
+I love building powerful tools, automation scripts, Chrome extensions, and APIs that simplify digital workflows.
+When I’m not coding, you’ll find me experimenting with new technologies, learning design, or sharing knowledge through my projects.
+
+🌐 Portfolio: [https://amitdas.site](https://amitdas.site)
+💬 Always open to collaborations, innovative ideas, and meaningful connections!
+
+### ☕ Support My Work
+
+If you like my projects and want to show support, you can **buy me a coffee** here 👇
+👉 [**Buy Me a Coffee**](https://buymeacoffee.com/amitdas4321)
 
 ---
 
