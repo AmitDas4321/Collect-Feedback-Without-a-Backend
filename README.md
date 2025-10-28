@@ -183,12 +183,6 @@ Finding your form’s internal field IDs (like `entry.1727297528`) is now effort
 
 Released under the **MIT License** — free to use and modify.
 
----
-
-Here’s how you can extend that author section nicely, including an “About Me” paragraph and your **Buy Me a Coffee** link in a clean GitHub-ready Markdown format:
-
----
-
 ## 👨‍💻 Author
 
 | [<img src="https://avatars.githubusercontent.com/u/112541611?v=4" width="60" alt="Amit Das"/>](https://amitdas.site) |
