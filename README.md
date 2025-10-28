@@ -75,7 +75,7 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feedback Form</title>
+  <title>Feedback Form Example</title>
   <style>
     .hidden { display: none; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
@@ -97,18 +97,18 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
       <form
         name="feedback-form"
         id="feedback-form"
-        action="https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse?"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/formResponse?"
         method="POST"
         target="hidden_iframe"
       >
-        <label for="entry.1727297528">Why did you uninstall?</label><br />
-        <textarea id="entry.1727297528" name="entry.1727297528" placeholder="Your answer..." required></textarea><br />
+        <label for="entry.453182606">Why did you uninstall?</label><br />
+        <textarea id="entry.453182606" name="entry.453182606" placeholder="Your answer..." required></textarea><br />
 
-        <label for="entry.1112510081">Your Email</label><br />
-        <input type="email" id="entry.1112510081" name="entry.1112510081" placeholder="you@example.com" /><br />
+        <label for="entry.235840986">Your Email</label><br />
+        <input type="email" id="entry.235840986" name="entry.235840986" placeholder="you@example.com" /><br />
 
         <!-- Hidden field for browser info -->
-        <input type="hidden" name="entry.280742688" id="entry.280742688" />
+        <input type="hidden" name="entry.750067174" id="entry.750067174" />
 
         <input type="submit" value="Submit" />
       </form>
@@ -121,7 +121,7 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
   <script>
     (function () {
       const form = document.getElementById('feedback-form');
-      const uaField = document.getElementById('entry.280742688');
+      const uaField = document.getElementById('entry.750067174');
       const formCtn = document.getElementById('form-ctn');
       const afterSubmit = document.getElementById('after-submit');
 
