@@ -20,6 +20,8 @@ Your custom HTML form silently submits user data to Google’s form endpoint, an
    - “Why did you uninstall?”  
    - “Your email (optional)”
 3. Once your form is ready, click the **Send** button (top right) → copy the **link**.
+4. **Important ⚙️:** Under **Settings → Responses**, make sure the option
+   **“Collect email addresses” is *turned off*** — otherwise, your custom HTML form submissions will be rejected.
 
 Your form link will look like this:
 
