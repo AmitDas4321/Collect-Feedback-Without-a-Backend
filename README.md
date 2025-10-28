@@ -73,44 +73,69 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Feedback Form</title>
+  <style>
+    .hidden { display: none; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    textarea, input[type="email"] { width: 100%; max-width: 600px; padding: 10px; margin: 6px 0 14px; }
+    input[type="submit"] { padding: 10px 16px; cursor: pointer; }
+  </style>
 </head>
 <body>
   <h2>We value your feedback 💬</h2>
 
-  <form id="feedback-form"
-        action="https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse"
+  <div id="content">
+    <!-- After submit message (hidden initially) -->
+    <p id="after-submit" class="hidden">
+      ✅ Thank you! Your feedback has been submitted.
+    </p>
+
+    <!-- Form container (shown initially) -->
+    <div id="form-ctn">
+      <form
+        name="feedback-form"
+        id="feedback-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLBuB4ibr8e9OObakx7_bJTx9DR4EN1EFdil7MIuSvW_eXjVS_2/formResponse?"
         method="POST"
         target="hidden_iframe"
-        enctype="text/plain">
+      >
+        <label for="entry.1727297528">Why did you uninstall?</label><br />
+        <textarea id="entry.1727297528" name="entry.1727297528" placeholder="Your answer..." required></textarea><br />
 
-    <label for="entry.1727297528">Why did you uninstall?</label><br>
-    <textarea id="entry.1727297528" name="entry.1727297528" placeholder="Your answer..." required></textarea><br>
+        <label for="entry.1112510081">Your Email</label><br />
+        <input type="email" id="entry.1112510081" name="entry.1112510081" placeholder="you@example.com" /><br />
 
-    <label for="entry.1112510081">Your Email</label><br>
-    <input type="email" id="entry.1112510081" name="entry.1112510081" placeholder="you@example.com"><br>
+        <!-- Hidden field for browser info -->
+        <input type="hidden" name="entry.280742688" id="entry.280742688" />
 
-    <!-- Hidden field for browser info -->
-    <input type="hidden" name="entry.280742688" id="entry.280742688">
+        <input type="submit" value="Submit" />
+      </form>
 
-    <input type="submit" value="Submit">
-  </form>
-
-  <iframe name="hidden_iframe" style="display:none;"></iframe>
-
-  <p id="thank-you" style="display:none;">✅ Thank you! Your feedback has been submitted.</p>
+      <!-- Keep navigation inside the page by posting to a hidden iframe -->
+      <iframe name="hidden_iframe" class="hidden"></iframe>
+    </div>
+  </div>
 
   <script>
-    const form = document.getElementById('feedback-form');
-    form.addEventListener('submit', () => {
-      document.getElementById('entry.280742688').value = navigator.userAgent;
-      setTimeout(() => {
-        form.style.display = 'none';
-        document.getElementById('thank-you').style.display = 'block';
-      }, 400);
-    });
+    (function () {
+      const form = document.getElementById('feedback-form');
+      const uaField = document.getElementById('entry.280742688');
+      const formCtn = document.getElementById('form-ctn');
+      const afterSubmit = document.getElementById('after-submit');
+
+      // Mirror your existing logic: set UA, then swap views shortly after submit
+      form.addEventListener('submit', function () {
+        uaField.value = navigator.userAgent;
+
+        // Small delay to allow the POST to fire to the iframe
+        setTimeout(function () {
+          formCtn.classList.add('hidden');
+          afterSubmit.classList.remove('hidden');
+        }, 300);
+      });
+    })();
   </script>
 </body>
 </html>
