@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/Backendless Feedback Page" alt="Backendless Feedback Page Banner" width="800">
+  <img src="img/Backendless Feedback Page.png" alt="Backendless Feedback Page Banner" width="800">
 </p>
 
 <p align="center">
