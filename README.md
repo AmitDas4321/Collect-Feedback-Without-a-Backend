@@ -18,7 +18,7 @@ Your custom HTML form silently submits user data to Google’s form endpoint, an
 1. Go to [Google Forms](https://forms.google.com) and create your form.  
 2. Add a few questions — for example:
    - “Why did you uninstall?”  
-   - “Your email (optional)”
+   - “Your email”
 3. Once your form is ready, click the **Send** button (top right) → copy the **link**.
 4. **Important ⚙️:** Under **Settings → Responses**, make sure the option
    **“Collect email addresses” is *turned off*** — otherwise, your custom HTML form submissions will be rejected.
@@ -80,7 +80,7 @@ Here’s an example of how to use that Form ID inside your custom HTML form:
     <label for="entry.1727297528">Why did you uninstall?</label><br>
     <textarea id="entry.1727297528" name="entry.1727297528" placeholder="Your answer..." required></textarea><br>
 
-    <label for="entry.1112510081">Your Email (optional)</label><br>
+    <label for="entry.1112510081">Your Email</label><br>
     <input type="email" id="entry.1112510081" name="entry.1112510081" placeholder="you@example.com"><br>
 
     <!-- Hidden field for browser info -->
