@@ -149,8 +149,12 @@ When I’m not coding, you’ll find me experimenting with new technologies, lea
 
 ### ☕ Support My Work
 
-If you like my projects and want to show support, you can **buy me a coffee** here 👇
-👉 [**Buy Me a Coffee**](https://buymeacoffee.com/amitdas4321)
+If you like my projects and want to show support, you can **buy me a coffee** here 
+ <a href="https://buymeacoffee.com/amitdas4321" target="_blank" rel="noopener">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+       alt="Buy Me A Coffee" height="40">
+</a>
+
 
 ---
 
