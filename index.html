@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback Form Example</title>
+  <style>
+    .hidden { display: none; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    textarea, input[type="email"] { width: 100%; max-width: 600px; padding: 10px; margin: 6px 0 14px; }
+    input[type="submit"] { padding: 10px 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>We value your feedback 💬</h2>
+
+  <div id="content">
+    <!-- After submit message (hidden initially) -->
+    <p id="after-submit" class="hidden">
+      ✅ Thank you! Your feedback has been submitted.
+    </p>
+
+    <!-- Form container (shown initially) -->
+    <div id="form-ctn">
+      <form
+        name="feedback-form"
+        id="feedback-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeCFkX_89yycL3oBaMmeDa8cZgBoWWMmKOa1ZqLJA9NG3vexg/formResponse?"
+        method="POST"
+        target="hidden_iframe"
+      >
+        <label for="entry.453182606">Why did you uninstall?</label><br />
+        <textarea id="entry.453182606" name="entry.453182606" placeholder="Your answer..." required></textarea><br />
+
+        <label for="entry.235840986">Your Email</label><br />
+        <input type="email" id="entry.235840986" name="entry.235840986" placeholder="you@example.com" /><br />
+
+        <!-- Hidden field for browser info -->
+        <input type="hidden" name="entry.750067174" id="entry.750067174" />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <!-- Keep navigation inside the page by posting to a hidden iframe -->
+      <iframe name="hidden_iframe" class="hidden"></iframe>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const form = document.getElementById('feedback-form');
+      const uaField = document.getElementById('entry.750067174');
+      const formCtn = document.getElementById('form-ctn');
+      const afterSubmit = document.getElementById('after-submit');
+
+      // Mirror your existing logic: set UA, then swap views shortly after submit
+      form.addEventListener('submit', function () {
+        uaField.value = navigator.userAgent;
+
+        // Small delay to allow the POST to fire to the iframe
+        setTimeout(function () {
+          formCtn.classList.add('hidden');
+          afterSubmit.classList.remove('hidden');
+        }, 300);
+      });
+    })();
+  </script>
+</body>
+</html>
