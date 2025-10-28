@@ -1,7 +1,16 @@
-<h1 align="center">Backendless Feedback Page</h1>
+<p align="center">
+  <img src="img/Backendless Feedback Page" alt="Backendless Feedback Page Banner" width="800">
+</p>
 
 <p align="center">
   Collect feedback or form submissions <b>without any backend</b> — using your Google Form as a hidden data collector.
+</p>
+
+<h1 align="center">Backendless Feedback Page</h1>
+
+<p align="center">
+  <b>Collect Feedback Without a Backend – 100% Client-Side!</b><br>
+  Version 1.0.0 • Developed by <a href="https://amitdas.site">Amit Das</a>
 </p>
 
 ---
