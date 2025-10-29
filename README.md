@@ -181,7 +181,7 @@ Finding your form’s internal field IDs (like `entry.1727297528`) is now effort
 
 ## 🧾 License
 
-Released under the **MIT License** — free to use and modify.
+Released under the **[MIT License](LICENSE)** — free to use and modify.
 
 ## 👨‍💻 Author
 
